@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import View from './components/View';
+import View2 from './components/View2';
 import Home from './components/Home';
 import Layout from './components/Layout';
 import './App.css';
@@ -17,6 +18,9 @@ function App() {
         <Switch>
           <Route path="/view">
             <View />
+          </Route>
+          <Route path="/view2">
+            <View2 />
           </Route>
           <Route path="/">
             <Home />

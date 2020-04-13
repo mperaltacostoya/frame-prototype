@@ -75,9 +75,29 @@
   flex: 2;
 }
 
+.even-content {
+  flex: 1;
+}
+
+.widget-container {
+  padding: 5px 20px;
+}
+
+.general-widget {
+  margin: 5px 10px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
 .inline {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.inline-start {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -97,4 +117,49 @@
 
 .background-silver {
   background-color: #D9D9DB !important;
+}
+
+.health-outer {
+  position: relative;
+}
+
+.health-outer .health-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.legend {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.percent-legend {
+  text-align: center;
+}
+
+.text-legend {
+  font-size: 16px;
+}
+
+.margin-right {
+  margin-right: 10px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.tip {
+  background-color: whitesmoke;
+  padding: 30px;
+}
+
+.setting {
+  margin-bottom: 30px;
 }

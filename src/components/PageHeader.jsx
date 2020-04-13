@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { PageHeader, Button, Input, Drawer, Form, Col, Row, Select, DatePicker, notification } from 'antd';
+import { PageHeader, Button, Input, Drawer, Form, Col, Row, Select, DatePicker, notification, message } from 'antd';
 import { MoreOutlined } from '@ant-design/icons';
+import Setting from './widgets/setting';
 
 const { Search } = Input;
 const { Option } = Select;
@@ -15,6 +16,10 @@ const openNotification = () => {
     },
     placement: 'bottomRight',
   });
+};
+
+const openInfo = () => {
+  message.info('This is a normal message');
 };
 
 function CustomPageHeader({ title }) {
@@ -38,7 +43,7 @@ function CustomPageHeader({ title }) {
             style={{ width: 200 }}
           />,
           <Button key="3">Operation</Button>,
-          <Button key="2">Operation</Button>,
+          <Button key="2" onClick={openInfo}>Operation</Button>,
           <Button key="1" type="primary">
             Primary
           </Button>,
@@ -88,6 +93,7 @@ function CustomPageHeader({ title }) {
           }
         >
           <Form layout="vertical" hideRequiredMark>
+            <Setting />
             <Row gutter={16}>
               <Col span={12}>
                 <Form.Item

@@ -33,7 +33,7 @@ function CustomLayout({ children }) {
             <Menu.Item style={{ backgroundColor: '#f0f0f0' }} key="4">option4</Menu.Item>
           </SubMenu>
           <Menu.Item key="sub2"><Link to="/view">View</Link></Menu.Item>
-          <Menu.Item key="sub3">Item3</Menu.Item>
+          <Menu.Item key="sub3"><Link to="/view2">Other View</Link></Menu.Item>
         </Menu>
       </Sider>
       <Layout>
