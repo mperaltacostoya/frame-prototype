@@ -18,6 +18,7 @@ function CustomLayout({ children }) {
           style={{ height: '100vh', borderRight: 0, backgroundColor: '#D9D9DB' }}
         >
           <Menu.Item key="sub0"><Link to="/">Home</Link></Menu.Item>
+          <Menu.Item key="sub1"><Link to="/clean">Clean Home</Link></Menu.Item>
           <SubMenu
             key="sub1"
             title={
@@ -33,7 +34,8 @@ function CustomLayout({ children }) {
             <Menu.Item style={{ backgroundColor: '#f0f0f0' }} key="4">option4</Menu.Item>
           </SubMenu>
           <Menu.Item key="sub2"><Link to="/view">View</Link></Menu.Item>
-          <Menu.Item key="sub3"><Link to="/view2">Other View</Link></Menu.Item>
+          <Menu.Item key="sub3"><Link to="/view-clean">Clean View</Link></Menu.Item>
+          <Menu.Item key="sub4"><Link to="/view2">Other View</Link></Menu.Item>
         </Menu>
       </Sider>
       <Layout>
